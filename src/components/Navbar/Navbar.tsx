@@ -1,8 +1,11 @@
+import "./navbar.scss";
+import logo from "../../assets/logo.svg";
+
 export const Navbar = () => {
   return (
     <nav className="nav">
       <a href="!#" className="nav__link">
-        <img src="" alt="" className="nav__logo" />
+      <img src={logo} alt="logo" className="nav__logo" />
       </a>
       <ul className="nav__list">
         <li className="nav__item">

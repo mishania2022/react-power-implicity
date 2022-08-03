@@ -1,10 +1,10 @@
-import React from 'react'
-import { Navbar } from './components/Navbar'
-import { Slider } from './components/Slider'
+import { Navbar } from './components/Navbar/Navbar'
+import { Slider } from './components/Slider/Slider'
+import "./index.scss";
 
 export const App = () => {
   return (
-    <div>
+    <div className='cover'>
       <Navbar/>
       <Slider/>
     </div>

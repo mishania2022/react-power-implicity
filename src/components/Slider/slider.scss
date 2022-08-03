@@ -1,0 +1,147 @@
+@import "../../index.scss";
+
+.slider {
+  &__container {
+    padding: 0 240px 250px;
+
+    @include tablet {
+      padding: 0 160px 150px;
+    }
+
+    @include mobile {
+      padding: 0 100px 100px;
+    }
+  }
+
+  &__slide {
+    text-align: center;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 83px;
+    color: #f2f4f7;
+    margin-top: 182px;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 56px;
+      margin-top: 100px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+      line-height: 42px;
+      margin-top: 60px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f4f7;
+    margin-top: 32px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 18px;
+      margin-top: 24px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 16px;
+    }
+  }
+
+  &__button {
+    margin-top: 80px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 16px 96px;
+    background: linear-gradient(124.53deg, #fc3f5f 0%, #7d61ff 100.32%);
+    background-clip: text;
+    color: transparent;
+    border: 3px solid transparent;
+    border-image: linear-gradient(124.53deg, #fc3f5f 0%, #7d61ff 100.32%);
+    border-image-slice: 1;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 16px 64px;
+      margin-top: 50px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 16px 48px;
+      margin-top: 30px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0 0;
+
+    @include tablet {
+      margin: 32px 0 0;
+    }
+
+    @include mobile {
+      margin: 24px 0 0;
+    }
+  }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 16px;
+    background: transparent;
+    border: 3px solid rgba(196, 196, 196, 0.16);
+
+    @include tablet {
+      width: 12px;
+      height: 12px;
+      margin: 8px;
+      border: 2px solid rgba(196, 196, 196, 0.16);
+    }
+
+    @include mobile {
+      width: 8px;
+      height: 8px;
+      margin: 4px;
+      border: 1px solid rgba(196, 196, 196, 0.16);
+    }
+  }
+
+  &__dot--active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 16px;
+    background: transparent;
+    border: 3px solid #ffffff;
+
+    @include tablet {
+      width: 12px;
+      height: 12px;
+      margin: 8px;
+      border: 2px solid #ffffff;
+    }
+
+    @include mobile {
+      width: 8px;
+      height: 8px;
+      margin: 4px;
+      border: 1px solid #ffffff;
+    }
+  }
+}
