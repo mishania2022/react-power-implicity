@@ -1,4 +1,4 @@
-import React from 'react'
+import "./slider.scss";
 
 export const Slider = () => {
   return (
@@ -14,7 +14,7 @@ export const Slider = () => {
           <div className="slider__dots">
             <div className="slider__dot"></div>
             <div className="slider__dot"></div>
-            <div className="slider__dot_active"></div>
+            <div className="slider__dot--active"></div>
             <div className="slider__dot"></div>
             <div className="slider__dot"></div>
           </div>
