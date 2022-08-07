@@ -1,4 +1,5 @@
 import "./slider.scss";
+import buttonSlider from "../../assets/slider-button.png";
 
 export const Slider = () => {
   return (
@@ -10,7 +11,9 @@ export const Slider = () => {
             Instead of spending time searching for the right app, our AI will
             bring the right app to you.
           </p>
-          <button className="slider__button">Learn</button>
+          <button className="slider__button">
+            <img src={buttonSlider} alt="button" />
+          </button>
           <div className="slider__dots">
             <div className="slider__dot"></div>
             <div className="slider__dot"></div>
@@ -22,4 +25,4 @@ export const Slider = () => {
       </div>
     </div>
   );
-}
+};
