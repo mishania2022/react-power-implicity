@@ -64,7 +64,7 @@
     background-clip: text;
     color: transparent;
     border: transparent;
-   
+
     @include tablet {
       font-size: 16px;
       line-height: 18px;
@@ -100,8 +100,13 @@
     height: 16px;
     border-radius: 50%;
     margin: 16px;
+    list-style: none;
     background: transparent;
     border: 3px solid rgba(196, 196, 196, 0.16);
+
+    &--active {
+      border: 3px solid #ffffff;
+    }
 
     @include tablet {
       width: 12px;
@@ -115,29 +120,6 @@
       height: 8px;
       margin: 4px;
       border: 1px solid rgba(196, 196, 196, 0.16);
-    }
-  }
-
-  &__dot--active {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin: 16px;
-    background: transparent;
-    border: 3px solid #ffffff;
-
-    @include tablet {
-      width: 12px;
-      height: 12px;
-      margin: 8px;
-      border: 2px solid #ffffff;
-    }
-
-    @include mobile {
-      width: 8px;
-      height: 8px;
-      margin: 4px;
-      border: 1px solid #ffffff;
     }
   }
 }
